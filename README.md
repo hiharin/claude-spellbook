@@ -48,7 +48,7 @@ To avoid name clashes with other commands, drop them in a subfolder instead
 
 Each person runs:
 ```
-/plugin marketplace add hirarin/claude-spellbook
+/plugin marketplace add hiharin/claude-spellbook
 /plugin install spellbook@spellbook-marketplace
 ```
 Updates propagate with `/plugin marketplace update spellbook-marketplace`.
