@@ -1,0 +1,13 @@
+{
+  "name": "spellbook-marketplace",
+  "owner": {
+    "name": "dwest"
+  },
+  "plugins": [
+    {
+      "name": "spellbook",
+      "source": "./",
+      "description": "Harry Potter-themed slash commands for everyday code tasks."
+    }
+  ]
+}

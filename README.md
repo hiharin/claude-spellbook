@@ -1,0 +1,67 @@
+# claude-spellbook
+
+Harry Potter-themed slash commands for [Claude Code](https://claude.com/claude-code).
+See **[SPELLBOOK.md](./SPELLBOOK.md)** for what each spell does.
+
+| Spell | Does |
+|---|---|
+| `/lumos` | Inspect code for bugs |
+| `/nox` | Stop background tasks & watchers |
+| `/revelio` | Reveal secrets, TODOs, dead code, risky deps |
+| `/reparo` | Fix bugs and apply the patch |
+| `/reducio` | Simplify / de-nest without changing behavior |
+| `/scourgify` | Strip debug prints and commented-out code |
+| `/legilimens` | Explain what code actually does |
+| `/accio` | Find where a symbol / file / config lives |
+| `/patronum` | Security review of the current branch |
+| `/protego` | Add input validation + tests to a risky path |
+| `/priori` | Summarize recent git history |
+| `/finite` | Revert uncommitted changes (asks first) |
+| `/geminio` | Scaffold new code from an existing file |
+| `/alohomora` | Get a failing test / build passing |
+
+---
+
+## Install — pick one
+
+### A. Copy the commands (simplest, works anywhere)
+
+**Just you, every project:**
+```bash
+mkdir -p ~/.claude/commands
+cp commands/*.md ~/.claude/commands/
+```
+
+**One project / a team, checked into the repo:**
+```bash
+mkdir -p .claude/commands
+cp /path/to/claude-spellbook/commands/*.md .claude/commands/
+git add .claude/commands && git commit -m "Add spellbook commands"
+```
+Anyone who works in that repo with Claude Code gets the commands automatically —
+no per-person setup, works on any Claude account.
+
+To avoid name clashes with other commands, drop them in a subfolder instead
+(`.claude/commands/spells/`) and they become `/spells:lumos` etc.
+
+### B. Install as a plugin (best for sharing across teams)
+
+Push this folder to a git repo your team can read, then each person runs:
+```
+/plugin marketplace add your-org/claude-spellbook
+/plugin install spellbook@spellbook-marketplace
+```
+Updates propagate with `/plugin marketplace update spellbook-marketplace`.
+This bundle already contains `.claude-plugin/plugin.json` and
+`.claude-plugin/marketplace.json` — edit the `author` / `owner` fields first.
+
+---
+
+## Portability notes
+
+- Nothing here is account-specific — no API keys, no org IDs, no absolute paths.
+- Commands are plain Markdown; they work on Claude Code CLI, desktop, and web.
+- `allowed-tools` in the frontmatter only *narrows* what a command may do
+  without prompting. If your team uses tools by different names, remove that
+  line and the command still works (Claude just asks before acting).
+- Safe to share publicly.
