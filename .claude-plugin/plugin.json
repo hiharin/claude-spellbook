@@ -3,7 +3,10 @@
   "description": "Harry Potter-themed slash commands for everyday code tasks: /lumos, /reparo, /revelio, and more.",
   "version": "1.0.0",
   "author": {
-    "name": "dwest"
+    "name": "hirarin",
+    "url": "https://github.com/hirarin"
   },
+  "homepage": "https://github.com/hirarin/claude-spellbook",
+  "license": "MIT",
   "keywords": ["commands", "workflow", "code-review", "productivity"]
 }

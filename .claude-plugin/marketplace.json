@@ -1,7 +1,8 @@
 {
   "name": "spellbook-marketplace",
   "owner": {
-    "name": "dwest"
+    "name": "hirarin",
+    "url": "https://github.com/hirarin"
   },
   "plugins": [
     {

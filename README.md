@@ -46,14 +46,14 @@ To avoid name clashes with other commands, drop them in a subfolder instead
 
 ### B. Install as a plugin (best for sharing across teams)
 
-Push this folder to a git repo your team can read, then each person runs:
+Each person runs:
 ```
-/plugin marketplace add your-org/claude-spellbook
+/plugin marketplace add hirarin/claude-spellbook
 /plugin install spellbook@spellbook-marketplace
 ```
 Updates propagate with `/plugin marketplace update spellbook-marketplace`.
-This bundle already contains `.claude-plugin/plugin.json` and
-`.claude-plugin/marketplace.json` — edit the `author` / `owner` fields first.
+Forking? Edit the `author` / `owner` fields in `.claude-plugin/` and the repo
+path above.
 
 ---
 
