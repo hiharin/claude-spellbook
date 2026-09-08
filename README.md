@@ -58,6 +58,11 @@ Updates propagate with `/plugin marketplace update spellbook-marketplace`.
 Forking? Edit the `author` / `owner` fields in `.claude-plugin/` and the repo
 path above.
 
+Unlike Option A's `install.sh`, plugin-installed commands run under the
+plugin's namespace — `/spellbook:lumos` instead of `/lumos` — since Claude
+Code prefixes commands by plugin name to avoid clashes. If you want the
+no-prefix names, use Option A instead.
+
 ---
 
 ## Portability notes
