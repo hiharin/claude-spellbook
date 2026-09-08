@@ -28,9 +28,12 @@ See **[SPELLBOOK.md](./SPELLBOOK.md)** for what each spell does.
 
 **Just you, every project:**
 ```bash
-mkdir -p ~/.claude/commands
-cp commands/*.md ~/.claude/commands/
+./install.sh
 ```
+Copies `commands/*.md` straight into `~/.claude/commands/`, so the spells run
+as `/lumos`, `/accio`, etc. — no prefix. It's a plain copy, not a symlink, so
+this repo can move or be deleted afterward without breaking anything. Re-run
+it any time to pick up updates.
 
 **One project / a team, checked into the repo:**
 ```bash
