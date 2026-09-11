@@ -7,7 +7,7 @@
 set -euo pipefail
 
 repo_dir="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-dest_dir="${HOME}/.claude/commands"
+dest_dir="${CLAUDE_CONFIG_DIR:-${HOME}/.claude}/commands"
 
 mkdir -p "$dest_dir"
 cp "$repo_dir"/commands/*.md "$dest_dir"/
