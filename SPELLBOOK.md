@@ -130,6 +130,16 @@ will not skip tests, loosen assertions, or `--force` past the check.
 /alohomora test_checkout_flow
 ```
 
+### `/apparecium` — *reveal the hidden signals*
+Connects the session to a Saleae Logic2 logic analyzer over MCP. Checks
+whether the `logic2` MCP server is already registered before adding it, and
+confirms it's reachable afterward. Requires the Logic2 desktop app running
+with its API server enabled on `127.0.0.1:10530`.
+
+```
+/apparecium
+```
+
 ---
 
 ## Casting well

@@ -19,6 +19,7 @@ See **[SPELLBOOK.md](./SPELLBOOK.md)** for what each spell does.
 | `/finite` | Revert uncommitted changes (asks first) |
 | `/geminio` | Scaffold new code from an existing file |
 | `/alohomora` | Get a failing test / build passing |
+| `/apparecium` | Connect to the Saleae Logic2 analyzer over MCP |
 
 ---
 
